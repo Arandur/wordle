@@ -271,8 +271,6 @@ fn main() {
 
         let scores = score(&solution, &guess);
 
-        eprintln!("Scores: {:?}", scores);
-
         io.write_scores(&scores).unwrap();
 
         if scores.iter().all(|s| *s == Score::Here) {
